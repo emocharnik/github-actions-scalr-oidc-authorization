@@ -6,7 +6,7 @@ on:
       - master
 env:
   SCALR_ENVIRONMENT: edgar-playground
-  SCALR_WORKSPACE: github-oidc-test
+  SCALR_WORKSPACE: oidc-test
 
 jobs:
   run-opentofu:
