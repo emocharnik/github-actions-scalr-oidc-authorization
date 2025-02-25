@@ -29,6 +29,7 @@ jobs:
             "$ACTIONS_ID_TOKEN_REQUEST_URL")
 
           OIDC_ID_TOKEN=$(echo $RESPONSE | jq -r '.value')
+          echo "OIDC token is: $OIDC_ID_TOKEN"
           
           if [ -z "$OIDC_ID_TOKEN" ] || [ "$OIDC_ID_TOKEN" == "null" ]; then
             echo "Error: Failed to retrieve OIDC token."
